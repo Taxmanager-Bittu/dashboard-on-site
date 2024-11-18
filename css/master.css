@@ -1,0 +1,46 @@
+:root {
+    --fontawscirchek: "\f058"
+}
+
+body {
+    font-family: 'Poppins';
+    background: #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.containbody {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-left: 200px;
+}
+
+.mainbody {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.containbody.activated {
+    padding-left: 0;
+}
+
+.sitenav.activated {
+    display: none;
+}
