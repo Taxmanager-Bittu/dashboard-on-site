@@ -1,4 +1,22 @@
-@media (max-width: 1400px) {}
+@media (max-width: 3000px) {
+    .mainbody .conbody {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .mainbody .conbody {
+        padding-left: 300px;
+    }
+
+    .mainbody .conbody.activated {
+        padding-left: 0;
+    }
+
+    nav {
+        height: calc(90vh - 155px);
+    }
+}
 
 @media (max-width: 1280px) {
     .mainbody {
