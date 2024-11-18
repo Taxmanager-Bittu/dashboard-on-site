@@ -1149,6 +1149,7 @@ header .userprofile span img {
 
 .mainbody .centerbody {
     padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 
@@ -1250,4 +1251,77 @@ header .usernotices ul li:hover ul {
     letter-spacing: 0.5px;
     margin: 0;
     padding: 0;
+}
+
+
+/*-- Credscorore --*/
+
+.showboxwite {
+    background: #fff;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 5px 20px 0 #e1e1e1;
+    border: 1px solid rgb(213, 215, 219);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.banner.showboxwite img {
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+}
+
+.showboxwite.servces {
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+}
+
+.showboxwite.servces .textbox {}
+
+.showboxwite.servces .textbox h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px 0px 20px;
+}
+
+.showboxwite.servces .textbox p {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.boxserctuion {
+    padding: 30px;
+    margin: 0;
+}
+
+.boxserctuion h4 {
+    font-size: 20px;
+    margin: 0px 0px 20px;
+    font-weight: 700;
+}
+
+.centerbody .boxserctuion p {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.offersbox {
+    position: relative;
+    margin: 30px 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+.cibilscro {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
 }
