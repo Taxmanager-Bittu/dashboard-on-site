@@ -272,6 +272,14 @@ header .breadcrumb ul li a span {
     background: #f3f3f3;
 }
 
+.mainbody .conbody {
+    padding-left: 300px;
+}
+
+.mainbody .conbody.activated {
+    padding-left: 0;
+}
+
 
 /*-- Toggle --*/
 

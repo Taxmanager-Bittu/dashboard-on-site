@@ -7,7 +7,7 @@ $('.dropnav > a').on('click', function (e) {
 // toggle 
 $(".nav-toggle").click(function () {
     $(this).toggleClass("active");
-    $(".sidenav").toggleClass("activated");
+    $(".sidenav, .conbody").toggleClass("activated");
 
     if ($(".sitenav").hasClass("activated")) {
         $(".sitenav").animate({ left: "-100%" }, 100);
