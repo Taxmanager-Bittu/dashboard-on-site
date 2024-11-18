@@ -142,6 +142,7 @@ header .usernotices {
     align-items: center;
     box-shadow: 2px 5px 20px 0 #e1e1e1;
     border: 1px solid rgb(213, 215, 219);
+    position: relative;
 }
 
 .mainbody header .row {
@@ -222,6 +223,7 @@ header .usernotices .loginsection {
     list-style: none;
     border-left: 1px solid rgb(213, 215, 219);
     border-right: 1px solid rgb(213, 215, 219);
+    position: relative;
 }
 
 header .usernotices ul {
@@ -359,4 +361,893 @@ header .breadcrumb ul li a span {
 
 .sidenav .dropnav ul li {
     line-height: 40px;
+}
+
+
+/*--  error --*/
+
+.errormessages {
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(46, 54, 67);
+    border-radius: 8px;
+    box-shadow: rgba(35, 68, 101, 0.15) 0px 6px 24px, rgba(35, 68, 101, 0.15) 0px 6px 8px;
+    z-index: 999;
+    min-height: 50px;
+    margin-bottom: 1rem;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    font-family: sans-serif;
+    cursor: pointer;
+    direction: ltr;
+    width: max-content;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0;
+}
+
+.errormessages.show {
+    display: block;
+    opacity: 1;
+    animation: flipIn 0.5s forwards;
+}
+
+.errormessages .hide {
+    display: none;
+    opacity: 0;
+    animation: flipOut 0.5s forwards;
+}
+
+.errormessages .succesmsg {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    align-content: flex-start;
+}
+
+.errormessages h6 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 0;
+    padding: 0px;
+    width: max-content;
+    gap: 15px;
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 150%;
+    color: rgb(35, 40, 54);
+    padding-right: 100px;
+    text-transform: capitalize;
+}
+
+.errormessages h6 svg {
+    width: 40px;
+    fill: none;
+    display: inline-block;
+}
+
+.errormessages span.close {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    font-size: 16px;
+    color: #596471;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.reverse-progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(101, 158, 16);
+    position: relative;
+    transition: width 10s linear;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.errormessages .errormsg+.reverse-progress-bar {
+    background-color: #ff0000;
+}
+
+.errormessages .errormsg.succesmsg h6 {
+    color: #ff0000;
+}
+
+
+/* Flip in from bottom to middle */
+
+@keyframes flipIn {
+    0% {
+        transform: rotateX(-90deg) skewX(20deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+
+/* Flip out from middle to bottom */
+
+@keyframes flipOut {
+    0% {
+        transform: rotateX(0deg) skewX(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateX(-90deg) skewX(20deg);
+        opacity: 0;
+    }
+}
+
+.feautured.phone-card-container p {
+    text-align: center;
+}
+
+.singtexare h6 {
+    margin: 20px 0px 0px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+/*-- Prodile edit Pages --*/
+
+
+/*-- Your profile --*/
+
+.details {
+    position: relative;
+    margin: 0;
+    padding: 10px 20px 30px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.details h2,
+.FormSecCompart .details h3 {
+    font-weight: 600;
+    color: #537aef;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 15px;
+    padding-bottom: 6px;
+    position: relative;
+    line-height: 20px;
+    margin: 15px 0px 20px;
+}
+
+.details h2:before,
+.FormSecCompart .details h3:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: #537aef;
+    height: 3px;
+    width: 50px;
+    border-radius: 15px;
+}
+
+.secdivae {
+    margin: 0px 0px 20px;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.secdivae h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a5a6b;
+    margin-bottom: 1.004rem !important;
+}
+
+.secdivae p {
+    font-size: 13px;
+    line-height: 25px;
+    color: #4a5a6b;
+    margin: 0;
+}
+
+.listtagsskill {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+}
+
+.listtagsskill li {
+    display: inline-block;
+    margin: 0;
+    color: #4a5a6b;
+    background: #f0f4f7;
+    padding: 0.6rem 1.2rem;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.profileareedit {
+    position: relative;
+    margin: 0px auto 50px;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.Listofdetl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.Listofdetl li {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    margin: 0px 0px 5px;
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Listofdetl li span {
+    width: 150px;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+}
+
+.Listofdetl li span {
+    font-weight: 400;
+}
+
+.Listofdetl li b {
+    width: 100%;
+    font-weight: 600;
+}
+
+
+/*--- Breadcurm --*/
+
+.breadcrumbsdestop {
+    margin: 0 auto 50px;
+    padding: 80px 0px 80px;
+    display: inline-block;
+    width: 100%;
+    background: #204d27;
+    overflow: hidden;
+    position: relative;
+}
+
+.breadcrumbsdestop h2 {
+    /* color: #fff; */
+    text-align: center;
+    margin: 0 auto 0;
+    padding: 0;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 55px;
+    text-transform: uppercase;
+    -webkit-text-fill-color: #ffffff00;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 5px;
+}
+
+
+/*-- Notification --*/
+
+.address ul,
+.notificitions ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+}
+
+.address ul,
+.notificitions ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.address ul li .boxsec,
+.notificitions ul li .boxsec {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.address ul li .boxsec,
+.notificitions ul li .boxsec {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.address ul li,
+.notificitions ul li {
+    border: 1px solid #537aef;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px 20px;
+}
+
+.address ul .boxsec b {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.address ul .boxsec span {
+    font-size: 13px;
+    margin: 0px 0px 5px;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.address ul .boxsec span b {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.address {
+    position: relative;
+    margin: 0px 0px 30px;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.notificitions {
+    position: relative;
+}
+
+.notificitions .boxsec span {
+    font-size: 17px;
+    text-align: center;
+    color: #f1f4ff;
+    background: #537aef;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.notificitions .boxsec b {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+.notificitions .boxsec p {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 10px 0px 0px;
+    padding: 0;
+    color: #000;
+}
+
+.profileuser {
+    position: sticky;
+    margin: 0;
+    padding: 10px;
+    background: #f7c657;
+    border-radius: 8px;
+    top: 100px;
+}
+
+.profileuser .proimgbox {
+    background: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.profileuser .proimgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.profileuser .infodeta {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.profileuser .infodeta h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.profileuser .infodeta ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.profileuser .infodeta ul li {
+    margin: 0px 0px 5px;
+    padding: 0;
+    font-size: 13px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.profileuser .infodeta ul li b {
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    width: 150px;
+    display: inline-block;
+}
+
+.profileuser .infodeta ul li span {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+}
+
+.profileuser .infodeta ul li:last-child span {
+    background: rgb(20 102 11 / 64%);
+    padding: 2px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    width: auto;
+    text-align: left;
+}
+
+.profileuser .logout {
+    position: relative;
+    margin: 0px 0px 0px;
+    display: inline-block;
+    width: 100%;
+    background: unset;
+}
+
+.profileuser .logout a {
+    background: #121010;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.profileuser .infodeta ul li:last-child b {
+    width: 100px;
+}
+
+
+/*-- Prodile Edit pages --*/
+
+.FormSecCompart {
+    position: relative;
+    margin: 0;
+    padding: 0px 0px 50px;
+    display: inline-block;
+    width: 100%;
+}
+
+.partdivices {
+    position: relative;
+    margin: 20px 0px 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.FormSecCompart .details h3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-top: 0;
+}
+
+.FormSecCompart .details h3 span {
+    display: flex;
+    background: #1b1dc7;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.partdivices .form-group {
+    position: relative;
+    margin: 0px 0px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.partdivices .form-group .form-control {
+    height: 40px;
+    border: 1px solid #ededed;
+    font-size: 12px;
+    color: #222;
+    width: 100%;
+    border-radius: 4px;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.partdivices .form-group label {
+    width: 100%;
+    margin: 0px 0px 6px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.partdivices .form-group textarea.form-control {
+    height: 100px;
+    padding: 15px;
+}
+
+.FormSecCompart .details {
+    padding: 20px 30px 0px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgb(233, 233, 233) 2px 5px 20px;
+    overflow: hidden;
+    border: 1px solid rgba(9, 33, 19, 0.4);
+}
+
+.FormSecCompart .profileuser {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgb(233, 233, 233) 2px 5px 20px;
+    overflow: hidden;
+    border: 1px solid rgba(9, 33, 19, 0.4);
+    padding: 25px;
+}
+
+
+/*-- Images Upload in profile images ---*/
+
+.profileuser .uploadimges {
+    width: 100%;
+    position: relative;
+}
+
+.profileuser .firstlable {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    font-size: 13px;
+    color: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px dashed #000;
+    line-height: 15px;
+}
+
+.profileuser .firstlable i {
+    font-size: 25px;
+    font-weight: 900;
+    color: #000;
+}
+
+.profileuser .firstlable span {
+    position: relative;
+    background: #e95804;
+    padding: 5px 20px !important;
+    margin: 0;
+    width: auto;
+    color: #ffffff;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+}
+
+.profileuser input.choose {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.profileuser .proimgbox span.delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    z-index: 2;
+}
+
+.SubmitBtnSecare {
+    background: #1b1dc7;
+    color: rgb(255, 255, 255);
+    border: unset;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin: 0px 0px 20px;
+    padding: 10px;
+}
+
+.profileuser .SubmitBtnSecare {
+    margin: 20px 0px 0px;
+    position: relative;
+    z-index: 9;
+}
+
+.partdivices .form-group label sup {
+    top: 0;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+    margin-left: 5px;
+    color: #f70000;
+}
+
+.notificitions .boxsec p:last-child span {
+    background: rgb(20 102 11 / 64%);
+    padding: 0px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 11px;
+    width: auto;
+    text-align: left;
+    margin: 0;
+    height: unset;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+}
+
+.notificitions .boxsec p:last-child {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    align-content: center;
+    margin-top: 25px;
+}
+
+.notificitions .boxsec p:last-child b {
+    color: #537aef;
+}
+
+.notificitions .boxsec p:last-child span[data-status="Enabled"] {
+    background: rgb(20 102 11 / 64%);
+}
+
+.notificitions .boxsec p:last-child span[data-status="Disabled"] {
+    background: rgb(255 0 0);
+}
+
+.profileareedit .details h2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profileareedit .details h2 span {
+    display: flex;
+    background: #1b1dc7;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profileareedit .details h2 span a {
+    color: #fff;
+}
+
+header .userprofile span img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.mainbody .centerbody {
+    padding-top: 30px;
+}
+
+
+/*-- User drop down --*/
+
+header .usernotices ul li ul {
+    display: none;
+}
+
+header .usernotices ul li:hover ul {
+    display: inline-block;
+    left: 0;
+    background: #ffff;
+    z-index: 3;
+    box-shadow: rgba(7, 7, 7, 0.13) 0px 20px 20px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid rgb(233, 232, 232);
+    position: absolute;
+    top: 100%;
+}
+
+.loginsection ul .dropnav li {
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0;
+    display: block;
+    width: 100%;
+    margin: 0px 0px 2px;
+    height: unset;
+    transition: all 0.5s linear 0s;
+    text-align: left;
+    line-height: 25px;
+}
+
+.loginsection ul .dropnav li a {
+    padding: 5px 10px;
+    line-height: 20px;
+    font-size: 13px;
+    transition: all 0.5s linear 0s;
+    font-weight: 500;
+    color: rgb(0, 0, 0) !important;
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.loginsection ul .dropnav li a i {
+    font-size: 13px;
+    width: 20px;
+}
+
+
+/*-- Desborad --*/
+
+.mainbody .centerbody h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    line-height: 20px;
+    margin: 0px 0px 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.mainbody .centerbody p {
+    font-size: 15px;
+    margin: 0px 0px 50px;
+    position: relative;
+}
+
+.centerbody .desboriconnot {
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 2px 5px 20px 0 #e1e1e1;
+    border: 1px solid rgb(213, 215, 219);
+}
+
+.centerbody .desboriconnot span {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.centerbody .desboriconnot h6 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
 }

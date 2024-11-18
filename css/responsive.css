@@ -145,6 +145,86 @@
     .mainbody .conbody {
         padding-left: 0;
     }
+
+    .address ul,
+    .notificitions ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .profileuser .infodeta h3 {
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .profileuser .infodeta h3 {
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .profileuser .infodeta ul li {
+        margin: 0px 0px 15px;
+        font-size: 12px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .details h2,
+    .FormSecCompart .details h3 {
+        font-size: 13px;
+        padding-bottom: 5px;
+        margin: 10px 0px 15px;
+    }
+
+    .Listofdetl li {
+        gap: 10px;
+        font-size: 12px;
+        margin: 0px 0px 5px;
+    }
+
+    .Listofdetl li b {
+        font-size: 11px;
+    }
+
+    .notificitions .boxsec p:last-child {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .notificitions .boxsec b {
+        font-size: 12px;
+    }
+
+    .notificitions .boxsec p:last-child span {
+        padding: 0px 10px;
+        font-size: 10px;
+        line-height: 22px;
+    }
+
+    .FormSecCompart .details {
+        padding: 10px 15px 0px;
+    }
+
+    .partdivices .form-group label {
+        width: 100%;
+        margin: 0px 0px 5px;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .centerbody .desboriconnot {
+        padding: 20px;
+    }
+
+    .centerbody .desboriconnot span img {
+        width: 50%;
+    }
+
+    .centerbody .desboriconnot h6 {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -290,5 +370,93 @@
 
     .sidenav .dropnav ul li {
         line-height: 40px;
+    }
+
+    .profileuser .infodeta h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .profileuser .infodeta ul li {
+        font-size: 11px;
+    }
+
+    .profileuser .logout a {
+        padding: 10px 20px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .profileuser {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .details h2,
+    .FormSecCompart .details h3 {
+        font-size: 13px;
+        padding-bottom: 5px;
+        line-height: 20px;
+        margin: 10px 0px 20px;
+    }
+
+    .Listofdetl li b {
+        font-size: 12px;
+    }
+
+    .Listofdetl li span {
+        width: 120px;
+    }
+
+    .address ul,
+    .notificitions ul {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .address ul li,
+    .notificitions ul li {
+        border-radius: 8px;
+        padding: 10px 10px;
+    }
+
+    .address ul .boxsec b {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .address ul .boxsec span {
+        font-size: 12px;
+        margin: 0px 0px 10px;
+    }
+
+    .notificitions .boxsec p:last-child {
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .notificitions .boxsec b {
+        font-size: 12px;
+    }
+
+    .notificitions .boxsec p:last-child span {
+        font-size: 10px;
+        line-height: 22px;
+    }
+
+    .FormSecCompart .profileuser {
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    .centerbody .desboriconnot {
+        padding: 20px;
+    }
+
+    .centerbody .desboriconnot span img {
+        width: 50%;
+    }
+
+    .centerbody .desboriconnot h6 {
+        font-size: 15px;
     }
 }
