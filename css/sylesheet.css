@@ -1,1 +1,321 @@
 @import url("/css/master.css");
+
+.sidenav {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background: #ffffff;
+    border-radius: 8px;
+    height: calc(100% - 100px);
+    box-shadow: 2px 5px 20px 0 #e1e1e1;
+    border: 1px solid rgb(213, 215, 219);
+    z-index: 3;
+    overflow: hidden;
+}
+
+.sidenav .logo {
+    padding: 10px 10px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid rgb(245, 245, 245);
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.sidenav .logo img {
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.sidenav .head {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.sidenav ul li {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    line-height: 45px;
+    padding: 0;
+}
+
+.sidenav ul li a,
+.logout a {
+    margin: 0;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    gap: 12px;
+}
+
+.sidenav ul li a span,
+.logout a span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.sidenav ul li a span img,
+.logout a span img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.sidenav ul .dropnav ul {
+    display: none;
+}
+
+
+/*-- Footer --*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffff;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px;
+    font-weight: 600;
+}
+
+
+/*--- Hader --*/
+
+.mainbody .conbody {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.mainbody header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+header .usernotices {
+    background: #fff;
+    border-radius: 50px;
+    margin: 0;
+    padding: 5px 25px;
+    display: flex;
+    gap: 20px;
+    width: auto;
+    align-items: center;
+    box-shadow: 2px 5px 20px 0 #e1e1e1;
+    border: 1px solid rgb(213, 215, 219);
+}
+
+.mainbody header .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainbody header .breadcrumb {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: unset;
+    line-height: unset;
+}
+
+header .breadcrumb ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .breadcrumb ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+
+header .breadcrumb ul li a {
+    color: #000;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+header .usernotices .notifica {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: auto;
+}
+
+header .usernotices .notifica span {
+    position: relative;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    color: #373587;
+}
+
+header .usernotices .notifica b {
+    position: absolute;
+    top: 5px;
+    right: -7px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #373587;
+    color: #fff;
+    font-size: 10px;
+    border: 2px solid #fff;
+}
+
+header .usernotices .loginsection {
+    width: auto;
+    margin: 0;
+    padding: 0px 15px;
+    list-style: none;
+    border-left: 1px solid rgb(213, 215, 219);
+    border-right: 1px solid rgb(213, 215, 219);
+}
+
+header .usernotices ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+}
+
+header .usernotices ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: auto;
+}
+
+header .usernotices ul li img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+header .usernotices ul li b {
+    width: 60px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+}
+
+header .usernotices ul li span {
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+header .breadcrumb ul li a span {
+    margin-right: 10px;
+}
+
+.logout {
+    position: relative;
+    margin: 0;
+    padding: 15px 0px;
+    width: 100%;
+    background: #f3f3f3;
+}
+
+
+/*-- Toggle --*/
+
+.nav-toggle {
+    height: 35px;
+    width: 30px;
+    border-radius: 4px;
+    position: relative;
+    top: 0;
+    display: block;
+    transition: all 0.5s linear 0s;
+    cursor: pointer;
+    margin: 0;
+    border: 1px solid #eeeff1;
+    padding: 2px 5px;
+}
+
+.nav-toggle div {
+    width: 100%;
+    height: 3px;
+    background: rgb(255 119 0);
+    margin: 5px auto;
+    transition: all 0.3s ease 0s;
+    text-align: right;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.nav-toggle .two {
+    width: 100%;
+    margin-right: 0px;
+}
+
+.nav-toggle .three {
+    width: 100%;
+    margin-right: 0px;
+}
+
+.nav-toggle.active .one {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active .two {
+    opacity: 0;
+}
+
+.nav-toggle.active .three {
+    transform: rotate(-45deg) translate(6px, -6px);
+    width: 100%;
+}

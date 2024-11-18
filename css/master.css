@@ -1,3 +1,5 @@
+@import url("/css/google-font.css");
+
 :root {
     --fontawscirchek: "\f058"
 }
@@ -24,12 +26,16 @@ a {
 .mainbody {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 30px;
+    height: 100vh;
 }
 
 nav {
     margin: 0;
     padding: 0;
+    height: calc(80vh - 40px);
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 nav ul {
