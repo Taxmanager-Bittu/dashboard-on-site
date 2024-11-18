@@ -12,6 +12,9 @@
     border: 1px solid rgb(213, 215, 219);
     z-index: 3;
     overflow: hidden;
+    display: inline-block;
+    left: 30px;
+    transition: 0.5s all linear;
 }
 
 .sidenav .logo {
@@ -318,4 +321,34 @@ header .breadcrumb ul li a span {
 .nav-toggle.active .three {
     transform: rotate(-45deg) translate(6px, -6px);
     width: 100%;
+}
+
+.sidenav ul li.dropnav a b {
+    position: absolute;
+    right: 7px;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.sidenav.activated {
+    display: none;
+    left: -100%;
+    transition: 0.5s all linear;
+}
+
+.sidenav .dropnav.active ul {
+    display: inline-block;
+    position: relative;
+    background: #f2f2f2;
+}
+
+.sidenav .dropnav.active ul li a {
+    padding-left: 40px;
+    display: inline-block;
+    height: unset;
+}
+
+.sidenav .dropnav ul li {
+    line-height: 40px;
 }
