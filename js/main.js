@@ -17,7 +17,7 @@ $(".nav-toggle").click(function () {
 });
 
 
-//banner
+//banner slider
 $('.bannerslider').owlCarousel({
     loop: true,
     margin: 10,
