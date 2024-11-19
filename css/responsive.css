@@ -2,11 +2,15 @@
     .mainbody .conbody {
         padding-left: 0;
     }
+
+    .mainbody .conbody {
+        padding-left: 300px;
+    }
 }
 
 @media (max-width: 1600px) {
     .mainbody .conbody {
-        padding-left: 300px;
+        padding-left: 250px;
     }
 
     .mainbody .conbody.activated {
