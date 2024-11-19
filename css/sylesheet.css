@@ -1245,7 +1245,6 @@ header .usernotices ul li:hover ul {
     margin-bottom: 10px;
 }
 
-
 .centerbody .desboriconnot h6 {
     font-size: 16px;
     font-weight: 700;
@@ -1343,9 +1342,20 @@ header .usernotices ul li:hover ul {
 }
 
 .productes .productbox span {
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0;
+    display: block;
+    margin: 10px auto 15px;
+    background: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 2px 3px 20px 0 #e1e1e1;
+    border: 1px solid rgb(213, 215, 219);
 }
 
 .productes .productbox h6 {
@@ -1361,10 +1371,15 @@ header .usernotices ul li:hover ul {
 }
 
 .showboxwite.rightsidebox h4 {
-    text-align: center;
-    font-size: 18px;
+    text-align: left;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 30px;
     display: inline-block;
     width: 100%;
+}
+
+.showboxwite.servces .imgbox,
+.centerbody .desboriconnot span img {
+    width: calc(100% - 50%);
 }
