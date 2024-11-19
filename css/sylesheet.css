@@ -1400,11 +1400,28 @@ header .usernotices ul li:hover ul {
     font-size: 16px;
     font-weight: 600;
     color: #000;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 10px;
 }
 
 .profileaccordbox .accordion-item {
     margin: 0px 0px 20px;
+    padding: 15px;
     border: 1px solid #d5d7db;
     box-shadow: 2px 5px 20px 0 #e1e1e1;
     border-radius: 10px;
+}
+
+.profileaccordbox .accordion-body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.profileaccordbox .accordion-body p {
+    margin: 0px;
+    line-height: 25px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
 }
