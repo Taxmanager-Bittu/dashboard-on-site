@@ -1405,12 +1405,17 @@ header .usernotices ul li:hover ul {
     padding-bottom: 10px;
 }
 
-.profileaccordbox .accordion-item {
-    margin: 0px 0px 20px;
+.profileaccordbox .accordion-button {
+    margin: 0px 0px 0px;
     padding: 15px;
     border: 1px solid #d5d7db;
     box-shadow: 2px 5px 20px 0 #e1e1e1;
-    border-radius: 10px;
+    border-radius: 10px !important;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
 }
 
 .profileaccordbox .accordion-body {
@@ -1424,4 +1429,28 @@ header .usernotices ul li:hover ul {
     line-height: 25px;
     font-size: 14px;
     letter-spacing: 0.3px;
+}
+
+.profileaccordbox .accordion-collapse {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.profileaccordbox .accordion-item {
+    margin: 0px 0px 15px;
+    border: unset;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    background: #f3f3f3;
+    border-radius: 10px !important;
+}
+
+.profileaccordbox .accordion-button::after {
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
