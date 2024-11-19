@@ -1395,7 +1395,7 @@ header .usernotices ul li:hover ul {
     width: 100%;
 }
 
-.profileaccordbox .accordion-button {
+.profileaccordbox .accordion-header {
     background: unset;
     font-size: 16px;
     font-weight: 600;
