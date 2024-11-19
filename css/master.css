@@ -15,6 +15,16 @@ a {
     padding: 0;
 }
 
+.productes .productbox span img {
+    /* width: 100px; */
+}
+
+img {
+    width: 100% !important;
+    margin: 0px auto;
+    display: block;
+}
+
 .containbody {
     position: relative;
     margin: 0;
