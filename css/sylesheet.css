@@ -7,7 +7,7 @@
     width: 250px;
     background: #ffffff;
     border-radius: 8px;
-    height: calc(100% - 100px);
+    height: calc(100% - 60px);
     box-shadow: 2px 5px 20px 0 #e1e1e1;
     border: 1px solid rgb(213, 215, 219);
     z-index: 3;
@@ -100,6 +100,8 @@ footer {
     background: #ffff;
     text-align: center;
     padding: 10px 0px;
+    box-shadow: 2px 5px 20px 0 #e1e1e1;
+    border: 1px solid rgb(213, 215, 219);
 }
 
 footer p {
@@ -1384,8 +1386,9 @@ header .usernotices ul li:hover ul {
     width: calc(100% - 50%);
 }
 
-/*--profile page css--*/
+
 /*--profile Accordion--*/
+
 .profileaccordbox {
     margin: 0px;
     padding: 0px;
