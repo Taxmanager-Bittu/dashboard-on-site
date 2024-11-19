@@ -1278,8 +1278,6 @@ header .usernotices ul li:hover ul {
     padding: 30px;
 }
 
-.showboxwite.servces .textbox {}
-
 .showboxwite.servces .textbox h4 {
     font-size: 20px;
     font-weight: 600;
@@ -1322,6 +1320,50 @@ header .usernotices ul li:hover ul {
     position: relative;
     margin: 0 auto;
     padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.productes {
+    position: relative;
+    margin: 0;
+    padding: 30px;
+}
+
+.productes h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.productes .productbox {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.productes .productbox span {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.productes .productbox h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.showboxwite.rightsidebox {
+    padding: 30px;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.showboxwite.rightsidebox h4 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
     display: inline-block;
     width: 100%;
 }
