@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Style File -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/sylesheet.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--OwlCarousel-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+</head>
+
+<body>
+
+    <div class="errormessages">
+        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+    </div>
+
+    <div class="mainbody">
+        <!-- Side Nav Bar-->
+        <div class="sidenav">
+            <!-- Logo-->
+            <div class="logo">
+                <a href="#"><img src="/images/logo.png" alt=""></a>
+            </div>
+
+            <!-- Nav -->
+            <div class="head">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/dashboard">
+                                <span><img src="/images/icon/dashboard.png" alt=""></span> My Earnings
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="/credit-score-check?utm_source=dashboard&utm_medium=landing_page&utm_campaign=credit_score_check">
+                                <span><img src="/images/icon/Credscore.png" alt=""></span> My Leads
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/profile.html">
+                                <span><img src="/images/icon/Profile.png" alt=""></span> My Profile
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Log Out-->
+                <div class="logout">
+                    <a href="/login/logout">
+                        <span><img src="/images/icon/logout.png" alt=""></span> LogOut
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="conbody">
+
+            <!--Header-->
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <!-- Breadcrumb -->
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="#"><span><i class="fas fa-angle-left"></i></span> Dashbord</a></li>
+                            </ul>
+                        </div>
+                        <!-- Login Section -->
+                        <div class="usernotices">
+
+                            <!-- Notification -->
+                            <div class="notifica">
+                                <span><i class="fas fa-bell"></i></span>
+                                <b>1</b>
+                            </div>
+                            <!-- Login -->
+                            <div class="loginsection">
+                                <ul>
+                                    <li class="dropnav">
+                                        <img src="/images/icon/usernoti.png" alt=""> <b>BittuShah</b>
+                                        <span><i class="fas fa-angle-down"></i></span>
+                                        <ul>
+                                            <li>
+                                                <a href="/profile"><i class="fa-solid fa-user"></i>Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="/edit-profile"><i class="fa-solid fa-user-pen"></i>Edit
+                                                    Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="/login/logout"><i
+                                                        class="fa-solid fa-right-from-bracket"></i>Log Out</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Toggle -->
+                            <div class="nav-toggle">
+                                <div class="one"></div>
+                                <div class="two"></div>
+                                <div class="three"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- center Body -->
+            <div class="centerbody">
+                <div class="myleadarea">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="tab-container">
+
+                                    <div class="tab-menu">
+                                        <ul>
+                                            <li><a href="#notable-devops-experience" class="taclarsec active"
+                                                    data-id="notable-devops-experience">All Leads</a></li>
+                                            <li><a href="#devops-tools-competency" class="taclarsec"
+                                                    data-id="devops-tools-competency">New Leads</a></li>
+                                            <li><a href="#clear-sight-of-results" class="taclarsec"
+                                                    data-id="clear-sight-of-results">Logged in</a></li>
+                                            <li><a href="#non-stop-system-support" class="taclarsec"
+                                                    data-id="non-stop-system-support">Sanctioned</a></li>
+                                            <li><a href="#disbursed" class="taclarsec" data-id="disbursed">Disbursed</a>
+                                            </li>
+                                            <li><a href="#lost" class="taclarsec" data-id="lost">Lost</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Tab-menu -->
+                                    <div class="shomabodi active" data-id="notable-devops-experience">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Lead ID</th>
+                                                    <th>Name</th>
+                                                    <th>Loan Type</th>
+                                                    <th>Bank</th>
+                                                    <th>Status</th>
+                                                    <th>Sourced by</th>
+                                                    <th>Assigned to</td>
+                                                    <th>Fulfilled by</td>
+                                                    <th>Amount</td>
+                                                    <th>Created</td>
+                                                    <th>Created Date</td>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <!-- Tab-menu -->
+                                    <div class="shomabodi " data-id="devops-tools-competency">
+                                        <h2>heading of tab two</h2>
+                                        <p>Content of tab two</p>
+                                    </div>
+
+                                    <!-- Tab menu -->
+                                    <div class="shomabodi " data-id="clear-sight-of-results">
+                                        <h2>heading of tab three</h2>
+                                        <p>Content of tab three</p>
+                                    </div>
+
+                                    <!-- Tab menu -->
+                                    <div class="shomabodi " data-id="disbursed">
+                                        <h2>heading of tab four</h2>
+                                        <p>Content of tab four</p>
+                                    </div>
+
+                                    <!-- Tab menu -->
+                                    <div class="shomabodi " data-id="non-stop-system-support">
+                                        <h2>heading of tab four</h2>
+                                        <p>Content of tab four</p>
+                                    </div>
+
+                                    <!-- Tab menu -->
+                                    <div class="shomabodi " data-id="lost">
+                                        <h2>heading of tab four</h2>
+                                        <p>Content of tab four</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>@Rising Advisory Services Private Limited. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <!-- Script File -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>

@@ -27,3 +27,14 @@ $('.bannerslider').owlCarousel({
     autoplayHoverPause: true,
     items: 1 // Ensures only one item is displayed
 });
+
+
+//tab section
+$(document).ready(function () {
+    $(".taclarsec").click(function () {
+        $(".shomabodi").removeClass("active");
+        $(".shomabodi[data-id='" + $(this).attr("data-id") + "']").addClass("active");
+        $(".taclarsec").removeClass("active");
+        $(this).parent().find(".taclarsec").addClass("active");
+    });
+});
