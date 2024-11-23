@@ -21,158 +21,58 @@
 </head>
 
 <body>
-    <div class="mainbody">
-        <!-- Side Nav Bar-->
-        <div class="sidenav">
-            <!-- Logo-->
-            <div class="logo">
-                <a href="#"><img src="/images/logo.png" alt=""></a>
-            </div>
 
-            <!-- Nav -->
-            <div class="head">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <span><img src="/images/icon/dashboard.png" alt=""></span> Dashboard
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><img src="/images/icon/Credscore.png" alt=""></span> Credit Score
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><img src="/images/icon/Profile.png" alt=""></span> Profile
-                            </a>
-                        </li>
-                        <li class="dropnav">
-                            <a href="#">
-                                <span><img src="/images/icon/serveices.png" alt=""></span> Services
-                                <b><i class="fa-solid fa-angle-down"></i></b>
-                            </a>
-                            <ul>
-                                <li><a href="#">Apply Loan</a></li>
-                                <li><a href="#">Loans Applied</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropnav">
-                            <a href="#">
-                                <span><img src="/images/icon/cm_desk.png" alt=""></span> CM Desk
-                                <b><i class="fa-solid fa-angle-down"></i></b>
-                            </a>
-                            <ul>
-                                <li><a href="#">Raise a query</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-
-                <!-- Log Out-->
-                <div class="logout">
-                    <a href="#">
-                        <span><img src="/images/icon/logout.png" alt=""></span> LogOut
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Main Body -->
-        <div class="conbody">
-
-            <!--Header-->
-            <header>
-                <div class="container">
-                    <div class="row">
-
-                        <!-- Breadcrumb -->
-                        <div class="breadcrumb">
-                            <ul>
-                                <li><a href="#"><span><i class="fas fa-angle-left"></i></span> CM Desk</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Login Section -->
-                        <div class="usernotices">
-
-                            <!-- Notification -->
-                            <div class="notifica">
-                                <span><i class="fas fa-bell"></i></span>
-                                <b>1</b>
-                            </div>
-
-                            <!-- Login -->
-                            <div class="loginsection">
-                                <ul>
-                                    <li> <img src="/images/icon/usernoti.png" alt=""> <b>Diva</b>
-                                        <span><i class="fas fa-angle-down"></i></span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Toggle -->
-                            <div class="nav-toggle">
-                                <div class="one"></div>
-                                <div class="two"></div>
-                                <div class="three"></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </header>
-
-
-            <!-- Center Body -->
-            <div class="centerbody">
-                <div class="cmddesk">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h5>How can i help you</h5>
-                                <p>Looks like you have same problem, lets quickly get it fixed, tell me how can i help
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-lg-4">
-                                <div class="desboriconnot">
-                                    <span><img src="/images/notification-deshboard.gif" alt=""></span>
-                                    <h6>See notification</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="desboriconnot">
-                                    <span><img src="/images/message-deshboard.gif" alt=""></span>
-                                    <h6>Contact with us</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4">
-                                <div class="desboriconnot">
-                                    <span><img src="/images/chat-deshboard.gif" alt=""></span>
-                                    <h6>Chat with us</h6>
-                                </div>
-                            </div>
-                        </div>
+    <div class="toptextare">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tecxterbox">
+                        <h3>Welcome to CredManager - Partner with Us</h3>
+                        <ul>
+                            <li><span><img src="/images/icon/check-mark.png" alt=""></span> Your Partner in Your Growth
+                            </li>
+                            <li><span><img src="/images/icon/check-mark.png" alt=""></span> Refer and Earn unlimited
+                                incentive</li>
+                            <li><span><img src="/images/icon/check-mark.png" alt=""></span> Personal Loan, Business
+                                Loan, Home Loan, Loan Against Property</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Footer-->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>@Rising Advisory Services Private Limited. All rights reserved</p>
+
+    <div class="singup">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 p-0">
+                    <div class="singupimg">
+                        <img src="/images/back.webp" alt="Partner's Login to CredManager">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="singtexare">
+                        <h4>Partner's Login to CredManager</h4>
+
+                        <form method="post" action="/login/authuserLogin">
+                            <!-- Mobile Number -->
+                            <div class="form-group">
+                                <label>Mobile Number</label>
+                                <input type="number" name="Mobile_Number" class="form-control" value=""
+                                    placeholder="Mobile Number" required>
+                            </div>
+                            <button type="submit" class="btn butnsubform">Login with OTP</button>
+                        </form>
+                        <h6>By logging in, you agree to the following Credit Report <a
+                                href="/terms-and-conditions">Terms of Use</a>,<a href="/privacy-policy">
+                                Terms &
+                                Conditions and Privacy Policy</a></h6>
+                        <h6><a href="https://credmanager.co/partner-with-us">Register as Partner</a></h6>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
 
 

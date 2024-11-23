@@ -185,10 +185,15 @@
     .Listofdetl li {
         gap: 10px;
         font-size: 12px;
-        margin: 0px 0px 5px;
+        margin: 0px 0px 10px;
+        flex-direction: column;
     }
 
-    .Listofdetl li b {
+    .Listofdetl li:last-child {
+        flex-direction: row;
+    }
+
+    .Listofdetl li .Listofdetl li b {
         font-size: 11px;
     }
 
@@ -412,6 +417,10 @@
         width: 120px;
     }
 
+    .Listofdetl li:last-child span {
+        width: 50px;
+    }
+
     .address ul,
     .notificitions ul {
         grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -439,7 +448,7 @@
     }
 
     .notificitions .boxsec b {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .notificitions .boxsec p:last-child span {
@@ -462,5 +471,24 @@
 
     .centerbody .desboriconnot h6 {
         font-size: 15px;
+    }
+
+    .profsecon .proimgbox img {
+        width: 60px;
+    }
+
+    .profsecon h3 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .profsecon .proimgbox {
+        gap: 5px;
+    }
+
+    .profsecon span a {
+        padding: 5px 10px;
+        gap: 10px;
+        font-size: 12px;
     }
 }
